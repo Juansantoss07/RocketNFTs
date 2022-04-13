@@ -274,7 +274,7 @@ header{
 @media(max-width:642px){
   .gallery-box1 img,
   .gallery-box2 img{
-    width: 100%;
+    width: 80%;
   }
 
   .container-gallery{
