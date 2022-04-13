@@ -792,6 +792,10 @@ footer{
   width: 20px;
 }
 
+.bottom-footer a{
+  color: var(--color-logo);
+}
+
 @media(max-width:887px){
   footer{
     height: auto;
