@@ -514,3 +514,112 @@ hr{
     text-align: center;
   }
 }
+
+/* Section Melhores Artistas */
+
+.best-artists{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-best-artists{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.title-best-artists h1{
+  font-size: 36px;
+  color: var(--text-color);
+}
+
+.title-best-artists span{
+  color: var(--color-logo);
+}
+.container-best-artists{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+}
+
+.card-best-artists{
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--card-color);
+  padding: 1rem 0;
+}
+
+.img-artist img{
+  width: 80px;
+}
+
+.info-artist{
+  display: flex;
+  flex-direction: column;
+}
+
+.info-artist p{
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.info-artist span{
+  color: var(--color-logo);
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+#cardtwo{
+  background-color: var(--color-logo);
+}
+
+#cardtwo span{
+  color: var(--text-color);
+}
+
+@media(max-width:947px){
+  .container-best-artists{
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .card-best-artists{
+    width: 80%;
+  }
+
+  .title-best-artists{
+    align-items:center;
+    justify-content: center;
+  }
+
+  .title-best-artists h1{
+    text-align: center;
+  }
+}
+
+@media(max-width:397px){
+  .card-best-artists{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-artist{
+    margin: 1rem;
+  }
+
+  .info-artist p{
+    text-align: center;
+  }
+
+  .info-artist span{
+    text-align: center;
+  }
+}
