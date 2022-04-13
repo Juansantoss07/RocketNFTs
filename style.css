@@ -294,7 +294,7 @@ header{
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid var(--subtitle-color);
-  height: 80vh;
+  height: auto;
 }
 
 .box-left-numbers-info{
@@ -342,7 +342,7 @@ header{
   color: var(--text-color);
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 2rem;
+  margin:4rem 0;
 }
 
 .text1, .text2{
@@ -400,6 +400,12 @@ header{
   .text1, .text2 {
     max-width: 100%;
     text-align: center;
+  }
+}
+
+@media(max-width:597px){
+  .img-numbers-info{
+    display: none;
   }
 }
 
@@ -596,6 +602,11 @@ hr{
 .span-best-artists span{
   color: var(--text-color);
   margin: 0 1rem;
+  cursor: pointer;
+}
+
+.span-best-artists img{
+  cursor: pointer;
 }
 
 @media(max-width:947px){
