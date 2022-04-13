@@ -19,6 +19,9 @@ html, body{
   background: var(--body-background);
 }
 
+
+/* Header */
+
 header{
   width: 100%;
   display: flex;
@@ -38,8 +41,10 @@ header{
   display: none;
 }
 
+
 .nav-links ul{
   display: flex;
+  margin-bottom: 1rem;
 }
 
 .nav-links li{
@@ -119,5 +124,95 @@ header{
 @media(max-width:284px){
   .logo img{
     width: 100px;
+  }
+}
+
+/*Section Home */
+
+.home{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 8rem; 
+}
+
+.container-home{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box-left{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.box-left p{
+  color: var(--text-color);
+  max-width: 310px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.box-artistas{
+  display: flex;
+  align-items: center;
+}
+
+.box-artistas img{
+  width: 70px;
+}
+
+.box-artistas span{
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.box-center{
+  color: var(--text-color);
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-center h1{
+  max-width: 100%;
+  font-size: 36px;
+}
+
+.box-center span{
+  color: var(--color-logo);
+}
+
+@media(max-width:997px){
+  .container-home{
+    flex-direction: column;
+  }
+
+  .box-left{
+    width: 100%;
+    align-items: center;
+  }
+
+  .box-left p{
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .box-artistas{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-center{
+    width: 100%;
+    text-align: center;
+    margin: 3rem 0;
   }
 }
